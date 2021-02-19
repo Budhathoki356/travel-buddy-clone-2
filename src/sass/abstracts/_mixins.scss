@@ -1,0 +1,20 @@
+%alignItem {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexSpacebetween {
+    @extend %alignItem;
+    justify-content: space-between;
+}
+
+@mixin flexCenter {
+    @extend %alignItem;
+    justify-content: center;
+}
+
+
+@mixin textTitle ($color, $size) {
+    font-size: $size;
+    color: $color
+}

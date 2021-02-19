@@ -1,0 +1,49 @@
+.advice {
+    &__inner {
+        padding: 80px 0;
+    }
+
+    &__items {
+        @include flexCenter;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    &__item {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        border-radius: 2%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            visibility: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            background-color: rgba($color: $green, $alpha: 0.5);
+            transition: all 0.1s;
+
+            .advice__description {
+                position: absolute;
+                bottom: 60px;
+                left: 20px;
+                color: $white;
+                font-size: $sm-fs;
+                font-weight: 600;
+            }
+        }
+
+        &:hover .overlay {
+            visibility: visible;
+        }
+    }
+}

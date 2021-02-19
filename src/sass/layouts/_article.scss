@@ -1,0 +1,37 @@
+.article {
+    width: 100%;
+    padding: 80px 0;
+    border-top: 1px solid $white-light;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        p {
+            font-size: 0.9rem;
+            padding: 50px 0;
+            width: 400px;
+        }
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        row-gap: 10px;
+        column-gap: 10px;
+
+        .image {
+
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+}

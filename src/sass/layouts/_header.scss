@@ -1,0 +1,105 @@
+.header {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    color: $white;
+
+    &__content {
+        @include flexSpacebetween;
+        flex-direction: column;
+    }
+
+    &__content-inner {
+        @include flexSpacebetween;
+        flex-direction: column;
+        align-self: flex-start;
+        padding-top: 90px;
+        margin-bottom: 100px;
+
+        & p {
+            max-width: 450px;
+        }
+    }
+
+    &__item {
+        align-self: flex-start;
+        padding: 20px 0;
+    }
+    &__btn {
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+
+    &__lower {
+        position: relative;
+        margin-bottom: -863px;
+        @include flexCenter;
+        align-self: flex-start;
+
+        .search {
+            width: 800px;
+            height: 80px;
+            background-color: $white;
+            @extend %alignItem;
+            padding-left: 30px;
+
+            input {
+                width: 450px;
+                font-size: $sm-fs;
+                color: $white-light;
+                border: none;
+                border-bottom: 2px solid $white-light;
+            }
+
+            i {
+                padding-left: 280px;
+                color: $white-light;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+
+        .video__carousel {
+            width: 280px;
+            height: 80px;
+            background-color: $green;
+            position: relative;
+            font-size: $sm-fs;
+            text-align: center;
+            @include flexCenter;
+
+            .video {
+                position: absolute;
+                width: 280px;
+                height: 200px;
+                background-blend-mode: overlay;
+                background-color: rgba(0, 0, 0, 0.5);
+                top: -200px;
+                @include flexCenter;
+
+                img {
+                    border-radius: 3% 3% 0 0;
+                    width: 280px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+
+            i {
+                position: absolute;
+                top: 40%;
+                cursor: pointer;
+            }
+
+            .arrow-left {
+                left: 20px;
+            }
+            .arrow-right {
+                right: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.card {
+    width: 100%;
+    padding: 80px 0;
+    &__inner {
+        background-size: cover;
+        border-radius: 10px;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: relative;
+
+        &--content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 100px 60px;
+            width: 480px;
+
+            p {
+                padding-top: 20px;
+                color: $white;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

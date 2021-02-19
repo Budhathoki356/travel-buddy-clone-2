@@ -1,0 +1,16 @@
+.title-white {
+    @include textTitle($white, $lg-fs);
+}
+.title-black {
+    @include textTitle($black, $lg-fs);
+}
+
+.title-sub-white {
+    @include textTitle($white, $md-fs);
+}
+.title-sub-black {
+    @include textTitle($black, $md-fs);
+}
+.sub-white {
+    @include textTitle($white, 1.3rem);
+}

@@ -1,0 +1,41 @@
+.carousal {
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+    .slide-item {
+        padding: 20px 0;
+        margin: 0 50px;
+    }
+    .slick-current {
+        border-radius: 5px;
+        transform: scale(1.2);
+    }
+    .slick-prev,
+    .slick-next {
+        font-size: 15px !important;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        content: "" !important;
+    }
+
+    .slide__content {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}

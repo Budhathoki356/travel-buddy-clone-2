@@ -1,0 +1,64 @@
+.footer {
+
+    $this: &;
+    border-top: 2px solid $white-light;
+
+    &__inner {
+        @include flexSpacebetween;
+        padding: 50px 0;
+    }
+
+    &__col {
+        height: 250px;
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            padding-bottom: 30px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 0.9em;
+                font-weight: 600;
+                color: $gray;
+                padding: 5px 0;
+                cursor: pointer;
+            }
+        }
+
+        #{$this}__form {
+            display: flex;
+            flex-direction: column;
+    
+            input {
+                padding-left: 20px;
+                padding-right: 50px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border: 2px solid $gray;
+                border-radius: 5px;
+                color: $gray;
+                margin-bottom: 20px;
+            }
+        }
+    } 
+    
+    &__lower {
+        border-top: 2px solid $white-light;
+        padding: 20px 0;
+
+        &--inner {
+            @include flexSpacebetween;
+            font-size: 0.9em;
+            color: $gray;
+        }
+
+        &--right {
+            span {
+                padding-left: 20px ;
+            }
+        }
+    }
+}
