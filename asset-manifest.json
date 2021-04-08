@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/travel-buddy-clone-2/static/css/main.2d9fe44d.chunk.css",
+    "main.js": "/travel-buddy-clone-2/static/js/main.c9c63c84.chunk.js",
+    "main.js.map": "/travel-buddy-clone-2/static/js/main.c9c63c84.chunk.js.map",
+    "runtime-main.js": "/travel-buddy-clone-2/static/js/runtime-main.5f5cb56a.js",
+    "runtime-main.js.map": "/travel-buddy-clone-2/static/js/runtime-main.5f5cb56a.js.map",
+    "static/css/2.45f2c147.chunk.css": "/travel-buddy-clone-2/static/css/2.45f2c147.chunk.css",
+    "static/js/2.50ad6394.chunk.js": "/travel-buddy-clone-2/static/js/2.50ad6394.chunk.js",
+    "static/js/2.50ad6394.chunk.js.map": "/travel-buddy-clone-2/static/js/2.50ad6394.chunk.js.map",
+    "index.html": "/travel-buddy-clone-2/index.html",
+    "static/css/2.45f2c147.chunk.css.map": "/travel-buddy-clone-2/static/css/2.45f2c147.chunk.css.map",
+    "static/css/main.2d9fe44d.chunk.css.map": "/travel-buddy-clone-2/static/css/main.2d9fe44d.chunk.css.map",
+    "static/js/2.50ad6394.chunk.js.LICENSE.txt": "/travel-buddy-clone-2/static/js/2.50ad6394.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/travel-buddy-clone-2/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f5cb56a.js",
+    "static/css/2.45f2c147.chunk.css",
+    "static/js/2.50ad6394.chunk.js",
+    "static/css/main.2d9fe44d.chunk.css",
+    "static/js/main.c9c63c84.chunk.js"
+  ]
+}
