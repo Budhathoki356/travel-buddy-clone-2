@@ -7,6 +7,11 @@
         p {
             padding: 20px 300px 20px 0;
             font-size: 0.9em;
+
+            @include respond(phone) {
+                font-size: 0.8em;
+                padding: 10px;
+            }
         }
     }
 

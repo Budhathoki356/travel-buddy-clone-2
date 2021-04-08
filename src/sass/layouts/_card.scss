@@ -7,6 +7,10 @@
         background-blend-mode: overlay;
         background-color: rgba(0, 0, 0, 0.4);
         position: relative;
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+        }
 
         &--content {
             display: flex;
@@ -20,6 +24,14 @@
                 color: $white;
                 font-size: 0.9rem;
             }
+
+        }
+    }
+
+    @include respond(phone) {
+        p {
+            font-size: 0.8em;
+            padding-right: 100px;
         }
     }
 }

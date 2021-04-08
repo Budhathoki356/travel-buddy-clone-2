@@ -1,11 +1,15 @@
 .footer {
-
     $this: &;
     border-top: 2px solid $white-light;
 
     &__inner {
         @include flexSpacebetween;
         padding: 50px 0;
+
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__col {
@@ -31,7 +35,7 @@
         #{$this}__form {
             display: flex;
             flex-direction: column;
-    
+
             input {
                 padding-left: 20px;
                 padding-right: 50px;
@@ -43,11 +47,14 @@
                 margin-bottom: 20px;
             }
         }
-    } 
-    
+    }
+
     &__lower {
         border-top: 2px solid $white-light;
         padding: 20px 0;
+        @include respond(phone) {
+            font-size: 0.8em;
+        }
 
         &--inner {
             @include flexSpacebetween;
@@ -57,7 +64,7 @@
 
         &--right {
             span {
-                padding-left: 20px ;
+                padding-left: 20px;
             }
         }
     }

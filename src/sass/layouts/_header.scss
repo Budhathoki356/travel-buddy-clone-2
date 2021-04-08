@@ -7,9 +7,19 @@
     background-blend-mode: overlay;
     color: $white;
 
+    @include respond(tab-land) {
+        .video__carousel {
+            display: none;
+        }
+    }
+
     &__content {
         @include flexSpacebetween;
         flex-direction: column;
+
+        @include respond( tab-port) {
+            display: flex;
+        }
     }
 
     &__content-inner {
@@ -19,18 +29,33 @@
         padding-top: 90px;
         margin-bottom: 100px;
 
+        @include respond( tab-port) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+        }
+
         & p {
-            max-width: 450px;
+            max-width: 650px;
         }
     }
 
     &__item {
         align-self: flex-start;
         padding: 20px 0;
+
+        // @include respond(tab-port){
+        //     align-self: center;
+        // }
     }
     &__btn {
         align-self: flex-start;
         margin-top: 30px;
+
+        // @include respond( tab-port) {
+        //     align-self: center;
+        // }
     }
 
     &__lower {
@@ -45,6 +70,10 @@
             background-color: $white;
             @extend %alignItem;
             padding-left: 30px;
+
+            @include respond( tab-port) {
+               display: none;
+            }
 
             input {
                 width: 450px;

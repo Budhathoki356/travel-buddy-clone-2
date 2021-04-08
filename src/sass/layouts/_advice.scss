@@ -7,11 +7,16 @@
         @include flexCenter;
         gap: 30px;
         padding-top: 50px;
+
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__item {
         position: relative;
-        width: 250px;
+        width: 450px;
         height: 350px;
         border-radius: 2%;
         overflow: hidden;

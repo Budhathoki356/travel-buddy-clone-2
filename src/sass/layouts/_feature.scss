@@ -5,11 +5,13 @@
     background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
 
     &__left {
         color: $white;
         align-self: flex-end;
-        
+        // padding-right: 30px;
+
         #{$this}__tag {
             background-color: $green;
             width: 110px;
@@ -39,11 +41,20 @@
         p {
             margin: 20px 0;
         }
+
+        @include respond(tab-port) {
+            h1 {
+                font-size: 2em;
+            }
+        }
     }
 
     &__stories {
         align-self: center;
         width: 400px;
+        padding-left: 20px;
+        z-index: 2;
+        padding-top: 60px;
 
         h3 {
             padding-bottom: 30px;
@@ -61,12 +72,12 @@
 
                 #{$this}__items {
                     h2 {
-                        color: $white-light;
+                        color: $white;
                         font-size: $sm-fs;
                     }
 
                     span {
-                        color: $gray;
+                        color: $white-light;
                         font-size: 12px;
                     }
                 }
@@ -74,12 +85,34 @@
                 hr {
                     width: 100%;
                     height: 1px;
-                    background-color: $gray;
+                    background-color: $white-light;
                 }
             }
     
         }
     }
+
+    &__stories::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 700px;
+        height: 100%;
+        background-color: rgba($gray, 0.5);
+        z-index: -1;
+
+        @include respond (tab-port) {
+            width: 375px;
+        }
+
+        @include respond( phone) {
+            bottom: 0;
+            width: 100%;
+            top:40%;
+            height: 650px;
+        }
+    } 
 
     &__store {
         img {
